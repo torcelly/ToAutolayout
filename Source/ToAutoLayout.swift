@@ -8,24 +8,24 @@
 
 import UIKit
 
-class ToAutoLayout {
+public class ToAutoLayout {
     
     // MARK: - Singleton Pattern
     
-    static let sharedController = ToAutoLayout()
+    public static let sharedController = ToAutoLayout()
     private init() {}
     
     // MARK: - Properties
     
-    var constraints: [NSLayoutConstraint]?
+    private var constraints: [NSLayoutConstraint]?
     
     // MARK: - Begin/End
     
-    func beginLayout() {
+    public func beginLayout() {
         constraints = [NSLayoutConstraint]()
     }
     
-    func endLayout() {
+    public func endLayout() {
         assert(constraints != nil, "Error activating nil constraints")
         NSLayoutConstraint.activate(constraints!)
         constraints = nil
@@ -33,11 +33,11 @@ class ToAutoLayout {
     
     // MARK: - Operations
     
-    func append(view: UIView, toView: UIView) {
+    public func append(view: UIView, toView: UIView) {
         self.append(view: view, toView: toView, top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
     }
     
-    func append(view: UIView, toView: UIView, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) {
+    public func append(view: UIView, toView: UIView, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -47,7 +47,7 @@ class ToAutoLayout {
         constraints?.append(NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: toView, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: -right))
     }
     
-    func append(view: UIView, toView: UIView, middleX: CGFloat, top: CGFloat, width: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, middleX: CGFloat, top: CGFloat, width: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -59,7 +59,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, middleX: CGFloat, bottom: CGFloat, width: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, middleX: CGFloat, bottom: CGFloat, width: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -71,7 +71,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, middleY: CGFloat, left: CGFloat, width: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, middleY: CGFloat, left: CGFloat, width: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -83,7 +83,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, middleY: CGFloat, right: CGFloat, width: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, middleY: CGFloat, right: CGFloat, width: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -95,7 +95,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, middleY: CGFloat, left: CGFloat, right: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, middleY: CGFloat, left: CGFloat, right: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -107,7 +107,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, left: CGFloat, bottom: CGFloat, right: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, left: CGFloat, bottom: CGFloat, right: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -119,7 +119,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, left: CGFloat, top: CGFloat, right: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, left: CGFloat, top: CGFloat, right: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -131,7 +131,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, top: CGFloat, left: CGFloat, width: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, top: CGFloat, left: CGFloat, width: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -143,7 +143,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, top: CGFloat, right: CGFloat, width: CGFloat, height: CGFloat) {
+    public func append(view: UIView, toView: UIView, top: CGFloat, right: CGFloat, width: CGFloat, height: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -155,7 +155,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, height: CGFloat, top: CGFloat) {
+    public func append(view: UIView, toView: UIView, height: CGFloat, top: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -167,7 +167,7 @@ class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    func append(view: UIView, toView: UIView, height: CGFloat, bottom: CGFloat) {
+    public func append(view: UIView, toView: UIView, height: CGFloat, bottom: CGFloat) {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         
