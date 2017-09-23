@@ -228,4 +228,50 @@ public class ToAutoLayout {
         constraints?.append(NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: toView, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: 0.0))
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
+    
+    
+    // Getters
+    
+    public func constraint(_ view: UIView, toView: UIView?, attribute: NSLayoutAttribute) -> NSLayoutConstraint? {
+        
+        if attribute == .height || attribute == .width {
+            let constraints = view.constraints
+            for constraint in constraints {
+                if constraint.firstAttribute == attribute || constraint.secondAttribute == attribute {
+                    return constraint
+                }
+            }
+            if let superview = view.superview {
+                let constraints = superview.constraints
+                for constraint in constraints {
+                    if constraint.firstAttribute == attribute || constraint.secondAttribute == attribute {
+                        return constraint
+                    }
+                }
+            }
+        }
+        else {
+            let constraints = view.constraints
+            for constraint in constraints {
+                if let firstItem = constraint.firstItem as? UIView,
+                    let secondItem = constraint.secondItem as? UIView {
+                    if (constraint.firstAttribute == attribute || constraint.secondAttribute == attribute) && (firstItem == view || secondItem == view) && (firstItem == toView || secondItem == toView) {
+                        return constraint
+                    }
+                }
+            }
+            if let superview = view.superview {
+                let constraints = superview.constraints
+                for constraint in constraints {
+                    if let firstItem = constraint.firstItem as? UIView,
+                        let secondItem = constraint.secondItem as? UIView {
+                        if (constraint.firstAttribute == attribute || constraint.secondAttribute == attribute) && (firstItem == view || secondItem == view) && (firstItem == toView || secondItem == toView) {
+                            return constraint
+                        }
+                    }
+                }
+            }
+        }
+        return nil
+    }
 }
