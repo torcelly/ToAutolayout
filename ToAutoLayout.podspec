@@ -14,12 +14,16 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://twitter.com/torcelly"
   s.source           = { :git => "https://github.com/torcelly/ToAutolayout.git", :tag => "#{s.version}" }
 
-  s.platform         = :ios
   s.requires_arc     = true
 
   s.source_files     = 'Source/*.swift'
-  s.frameworks       = 'UIKit'
-
+  
+  # iOS specific
   s.ios.deployment_target = '8.0'
+  s.ios.frameworks   = 'UIKit'
+  
+  # macOS specific
+  s.osx.deployment_target = '10.12'
+  s.osx.frameworks = 'Cocoa'
 
 end
