@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ToAutoLayout"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "The most easy way to create simple autolayouts."
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.description  = <<-DESC
