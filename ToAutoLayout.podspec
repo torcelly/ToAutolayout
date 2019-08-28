@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   s.source_files     = 'Source/*.swift'
-  
+  s.swift_version    = '4.2'
+
   # iOS specific
   s.ios.deployment_target = '8.0'
   s.ios.frameworks   = 'UIKit'
