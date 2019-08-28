@@ -13,6 +13,10 @@
 		2ED40A2E1F49B23A0049CBB0 /* ToAutoLayout.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2ED40A2D1F49B23A0049CBB0 /* ToAutoLayout.swift */; };
 		68C86AAFAD9CF0BB81BD6CC0 /* Pods_ToAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B34E6ADC7BF65AB6DFD102 /* Pods_ToAutoLayout.framework */; };
 		AA74DF83C0CD7141F265E554 /* Pods_ToAutoLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344066C60739E498153FD636 /* Pods_ToAutoLayoutTests.framework */; };
+		E7947BB6ED9A9C6C8079E746 /* Pods_ToAutoLayout_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E091CB1AD9D94F18FBE091F /* Pods_ToAutoLayout_macOS.framework */; };
+		ED849EA52170F16F002D461C /* ToAutoLayout.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2ED40A2D1F49B23A0049CBB0 /* ToAutoLayout.swift */; };
+		ED849EA62170F16F002D461C /* ToAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ED40A161F49B0940049CBB0 /* ToAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED849EAF2170F400002D461C /* Info_macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED849EAE2170F400002D461C /* Info_macOS.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C01B26F03155054B5272F56 /* Pods-ToAutoLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayoutTests/Pods-ToAutoLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2ED40A131F49B0940049CBB0 /* ToAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED40A161F49B0940049CBB0 /* ToAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToAutoLayout.h; sourceTree = "<group>"; };
 		2ED40A171F49B0940049CBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,11 +39,15 @@
 		2ED40A231F49B0940049CBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ED40A2D1F49B23A0049CBB0 /* ToAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToAutoLayout.swift; path = Source/ToAutoLayout.swift; sourceTree = SOURCE_ROOT; };
 		344066C60739E498153FD636 /* Pods_ToAutoLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToAutoLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4746DA7873C23D45C3513BE7 /* Pods-ToAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayout/Pods-ToAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
-		88C999C647A3224E7BDD90C0 /* Pods-ToAutoLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayoutTests/Pods-ToAutoLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
-		94AE8EEB74DB1792CB5CCEA4 /* Pods-ToAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayout/Pods-ToAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
-		BDAC39ACE60223CC679D601B /* Pods-ToAutoLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayoutTests/Pods-ToAutoLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		39EA0C763C490D598B0CCC9D /* Pods-ToAutoLayout_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayout_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayout_macOS/Pods-ToAutoLayout_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3D0DCB326BE42A95A145FFFB /* Pods-ToAutoLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayoutTests/Pods-ToAutoLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		4259985BE7BC91D21E9ABB7D /* Pods-ToAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayout/Pods-ToAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
+		5E091CB1AD9D94F18FBE091F /* Pods_ToAutoLayout_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToAutoLayout_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F80DB363CEAA147C505E40A /* Pods-ToAutoLayout_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayout_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayout_macOS/Pods-ToAutoLayout_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		B4BA7C4BA12B353418B52060 /* Pods-ToAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayout/Pods-ToAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B34E6ADC7BF65AB6DFD102 /* Pods_ToAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED849EAC2170F16F002D461C /* ToAutoLayout_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToAutoLayout_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED849EAE2170F400002D461C /* Info_macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_macOS.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED849EA22170F16F002D461C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7947BB6ED9A9C6C8079E746 /* Pods_ToAutoLayout_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +84,7 @@
 			children = (
 				C5B34E6ADC7BF65AB6DFD102 /* Pods_ToAutoLayout.framework */,
 				344066C60739E498153FD636 /* Pods_ToAutoLayoutTests.framework */,
+				5E091CB1AD9D94F18FBE091F /* Pods_ToAutoLayout_macOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,8 +95,8 @@
 				2ED40A151F49B0940049CBB0 /* ToAutoLayout */,
 				2ED40A201F49B0940049CBB0 /* ToAutoLayoutTests */,
 				2ED40A141F49B0940049CBB0 /* Products */,
-				D1BAA0F9D115A5D10DEB8404 /* Pods */,
 				0CF787BAFA13052A1003D02D /* Frameworks */,
+				57564109453C843C52EEC247 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +105,7 @@
 			children = (
 				2ED40A131F49B0940049CBB0 /* ToAutoLayout.framework */,
 				2ED40A1C1F49B0940049CBB0 /* ToAutoLayoutTests.xctest */,
+				ED849EAC2170F16F002D461C /* ToAutoLayout_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +116,7 @@
 				2ED40A161F49B0940049CBB0 /* ToAutoLayout.h */,
 				2ED40A2D1F49B23A0049CBB0 /* ToAutoLayout.swift */,
 				2ED40A171F49B0940049CBB0 /* Info.plist */,
+				ED849EAE2170F400002D461C /* Info_macOS.plist */,
 			);
 			path = ToAutoLayout;
 			sourceTree = "<group>";
@@ -110,13 +130,15 @@
 			path = ToAutoLayoutTests;
 			sourceTree = "<group>";
 		};
-		D1BAA0F9D115A5D10DEB8404 /* Pods */ = {
+		57564109453C843C52EEC247 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				94AE8EEB74DB1792CB5CCEA4 /* Pods-ToAutoLayout.debug.xcconfig */,
-				4746DA7873C23D45C3513BE7 /* Pods-ToAutoLayout.release.xcconfig */,
-				88C999C647A3224E7BDD90C0 /* Pods-ToAutoLayoutTests.debug.xcconfig */,
-				BDAC39ACE60223CC679D601B /* Pods-ToAutoLayoutTests.release.xcconfig */,
+				B4BA7C4BA12B353418B52060 /* Pods-ToAutoLayout.debug.xcconfig */,
+				4259985BE7BC91D21E9ABB7D /* Pods-ToAutoLayout.release.xcconfig */,
+				2C01B26F03155054B5272F56 /* Pods-ToAutoLayoutTests.debug.xcconfig */,
+				3D0DCB326BE42A95A145FFFB /* Pods-ToAutoLayoutTests.release.xcconfig */,
+				39EA0C763C490D598B0CCC9D /* Pods-ToAutoLayout_macOS.debug.xcconfig */,
+				6F80DB363CEAA147C505E40A /* Pods-ToAutoLayout_macOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -133,6 +155,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED849EA42170F16F002D461C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED849EA52170F16F002D461C /* ToAutoLayout.swift in Headers */,
+				ED849EA62170F16F002D461C /* ToAutoLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -145,7 +176,6 @@
 				2ED40A0F1F49B0940049CBB0 /* Frameworks */,
 				2ED40A101F49B0940049CBB0 /* Headers */,
 				2ED40A111F49B0940049CBB0 /* Resources */,
-				D8BC223C8C096FA26EC55E77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,8 +194,6 @@
 				2ED40A181F49B0940049CBB0 /* Sources */,
 				2ED40A191F49B0940049CBB0 /* Frameworks */,
 				2ED40A1A1F49B0940049CBB0 /* Resources */,
-				86EF80CA657784FB739305C8 /* [CP] Embed Pods Frameworks */,
-				E425C4FB75B0DA4176590A25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,6 +204,25 @@
 			productName = ToAutoLayoutTests;
 			productReference = 2ED40A1C1F49B0940049CBB0 /* ToAutoLayoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED849E9F2170F16F002D461C /* ToAutoLayout_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED849EA92170F16F002D461C /* Build configuration list for PBXNativeTarget "ToAutoLayout_macOS" */;
+			buildPhases = (
+				ED849EA02170F16F002D461C /* [CP] Check Pods Manifest.lock */,
+				ED849EA12170F16F002D461C /* Sources */,
+				ED849EA22170F16F002D461C /* Frameworks */,
+				ED849EA42170F16F002D461C /* Headers */,
+				ED849EA72170F16F002D461C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToAutoLayout_macOS;
+			productName = ToAutoLayout;
+			productReference = ED849EAC2170F16F002D461C /* ToAutoLayout_macOS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -209,6 +256,7 @@
 			projectRoot = "";
 			targets = (
 				2ED40A121F49B0940049CBB0 /* ToAutoLayout */,
+				ED849E9F2170F16F002D461C /* ToAutoLayout_macOS */,
 				2ED40A1B1F49B0940049CBB0 /* ToAutoLayoutTests */,
 			);
 		};
@@ -229,6 +277,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED849EA72170F16F002D461C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED849EAF2170F400002D461C /* Info_macOS.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -238,28 +294,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToAutoLayout-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		86EF80CA657784FB739305C8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToAutoLayoutTests/Pods-ToAutoLayoutTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D5834ACEBF736AC05608FF79 /* [CP] Check Pods Manifest.lock */ = {
@@ -268,43 +312,34 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToAutoLayoutTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D8BC223C8C096FA26EC55E77 /* [CP] Copy Pods Resources */ = {
+		ED849EA02170F16F002D461C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToAutoLayout_macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToAutoLayout/Pods-ToAutoLayout-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E425C4FB75B0DA4176590A25 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToAutoLayoutTests/Pods-ToAutoLayoutTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -322,6 +357,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ED40A221F49B0940049CBB0 /* ToAutoLayoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED849EA12170F16F002D461C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +493,7 @@
 		};
 		2ED40A281F49B0940049CBB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94AE8EEB74DB1792CB5CCEA4 /* Pods-ToAutoLayout.debug.xcconfig */;
+			baseConfigurationReference = B4BA7C4BA12B353418B52060 /* Pods-ToAutoLayout.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -475,7 +517,7 @@
 		};
 		2ED40A291F49B0940049CBB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4746DA7873C23D45C3513BE7 /* Pods-ToAutoLayout.release.xcconfig */;
+			baseConfigurationReference = 4259985BE7BC91D21E9ABB7D /* Pods-ToAutoLayout.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -498,7 +540,7 @@
 		};
 		2ED40A2B1F49B0940049CBB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88C999C647A3224E7BDD90C0 /* Pods-ToAutoLayoutTests.debug.xcconfig */;
+			baseConfigurationReference = 2C01B26F03155054B5272F56 /* Pods-ToAutoLayoutTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = VM7B3AWTR8;
@@ -513,7 +555,7 @@
 		};
 		2ED40A2C1F49B0940049CBB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDAC39ACE60223CC679D601B /* Pods-ToAutoLayoutTests.release.xcconfig */;
+			baseConfigurationReference = 3D0DCB326BE42A95A145FFFB /* Pods-ToAutoLayoutTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = VM7B3AWTR8;
@@ -521,6 +563,55 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torcelly.ToAutoLayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED849EAA2170F16F002D461C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39EA0C763C490D598B0CCC9D /* Pods-ToAutoLayout_macOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VM7B3AWTR8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToAutoLayout/Info_macOS.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torcelly.ToAutoLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED849EAB2170F16F002D461C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F80DB363CEAA147C505E40A /* Pods-ToAutoLayout_macOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VM7B3AWTR8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToAutoLayout/Info_macOS.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torcelly.ToAutoLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -552,6 +643,15 @@
 			buildConfigurations = (
 				2ED40A2B1F49B0940049CBB0 /* Debug */,
 				2ED40A2C1F49B0940049CBB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED849EA92170F16F002D461C /* Build configuration list for PBXNativeTarget "ToAutoLayout_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED849EAA2170F16F002D461C /* Debug */,
+				ED849EAB2170F16F002D461C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
