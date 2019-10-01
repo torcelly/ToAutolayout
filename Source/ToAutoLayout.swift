@@ -13,7 +13,7 @@ import UIKit
 #endif
 
 public class ToAutoLayout {
-    
+        
     #if os(OSX)
     public typealias View = NSView
     #elseif os(iOS)
@@ -32,7 +32,7 @@ public class ToAutoLayout {
     // MARK: - Begin/End
     
     public func beginLayout() {
-        constraints = [NSLayoutConstraint]()
+        constraints = []
     }
     
     public func endLayout() {
@@ -337,23 +337,23 @@ public class ToAutoLayout {
         constraints?.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[view(height)]", options: [], metrics: metrics, views: views))
     }
     
-    
-    // Getters
-    
-    public func constraint(_ view: View, toView: View?, attribute: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
+    // MARK: - Getters
+
+    public func constraint(_ view: View, toView: View?, attribute: NSLayoutConstraint.Attribute) -> ToConstraint {
+        var output = ToConstraint()
         
         if attribute == .height || attribute == .width {
             let constraints = view.constraints
             for constraint in constraints {
                 if constraint.firstAttribute == attribute || constraint.secondAttribute == attribute {
-                    return constraint
+                    output.append(constraint)
                 }
             }
             if let superview = view.superview {
                 let constraints = superview.constraints
                 for constraint in constraints {
                     if constraint.firstAttribute == attribute || constraint.secondAttribute == attribute {
-                        return constraint
+                        output.append(constraint)
                     }
                 }
             }
@@ -364,7 +364,7 @@ public class ToAutoLayout {
                 if let firstItem = constraint.firstItem as? View,
                     let secondItem = constraint.secondItem as? View {
                     if (constraint.firstAttribute == attribute || constraint.secondAttribute == attribute) && (firstItem == view || secondItem == view) && (firstItem == toView || secondItem == toView) {
-                        return constraint
+                        output.append(constraint)
                     }
                 }
             }
@@ -374,12 +374,12 @@ public class ToAutoLayout {
                     if let firstItem = constraint.firstItem as? View,
                         let secondItem = constraint.secondItem as? View {
                         if (constraint.firstAttribute == attribute || constraint.secondAttribute == attribute) && (firstItem == view || secondItem == view) && (firstItem == toView || secondItem == toView) {
-                            return constraint
+                            output.append(constraint)
                         }
                     }
                 }
             }
         }
-        return nil
+        return output
     }
 }

@@ -14,6 +14,8 @@
 		68C86AAFAD9CF0BB81BD6CC0 /* Pods_ToAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B34E6ADC7BF65AB6DFD102 /* Pods_ToAutoLayout.framework */; };
 		AA74DF83C0CD7141F265E554 /* Pods_ToAutoLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344066C60739E498153FD636 /* Pods_ToAutoLayoutTests.framework */; };
 		E7947BB6ED9A9C6C8079E746 /* Pods_ToAutoLayout_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E091CB1AD9D94F18FBE091F /* Pods_ToAutoLayout_macOS.framework */; };
+		ED3DC61523410BD90094129B /* ToConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DC61423410BD90094129B /* ToConstraint.swift */; };
+		ED3DC61623410E270094129B /* ToConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DC61423410BD90094129B /* ToConstraint.swift */; };
 		ED849EA52170F16F002D461C /* ToAutoLayout.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2ED40A2D1F49B23A0049CBB0 /* ToAutoLayout.swift */; };
 		ED849EA62170F16F002D461C /* ToAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ED40A161F49B0940049CBB0 /* ToAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED849EAF2170F400002D461C /* Info_macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED849EAE2170F400002D461C /* Info_macOS.plist */; };
@@ -46,6 +48,7 @@
 		6F80DB363CEAA147C505E40A /* Pods-ToAutoLayout_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayout_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayout_macOS/Pods-ToAutoLayout_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		B4BA7C4BA12B353418B52060 /* Pods-ToAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToAutoLayout/Pods-ToAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B34E6ADC7BF65AB6DFD102 /* Pods_ToAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3DC61423410BD90094129B /* ToConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToConstraint.swift; path = ../Source/ToConstraint.swift; sourceTree = "<group>"; };
 		ED849EAC2170F16F002D461C /* ToAutoLayout_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToAutoLayout_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED849EAE2170F400002D461C /* Info_macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_macOS.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +118,7 @@
 			children = (
 				2ED40A161F49B0940049CBB0 /* ToAutoLayout.h */,
 				2ED40A2D1F49B23A0049CBB0 /* ToAutoLayout.swift */,
+				ED3DC61423410BD90094129B /* ToConstraint.swift */,
 				2ED40A171F49B0940049CBB0 /* Info.plist */,
 				ED849EAE2170F400002D461C /* Info_macOS.plist */,
 			);
@@ -236,7 +240,7 @@
 				TargetAttributes = {
 					2ED40A121F49B0940049CBB0 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1100;
 					};
 					2ED40A1B1F49B0940049CBB0 = {
 						CreatedOnToolsVersion = 9.0;
@@ -349,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3DC61523410BD90094129B /* ToConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3DC61623410E270094129B /* ToConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
